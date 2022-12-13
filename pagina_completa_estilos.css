@@ -1,0 +1,232 @@
+
+.clear { clear: both; }
+img { border: none; }
+
+/*-- Layout ----------------------------------------------------------*/
+#contenedor {
+  width: 90%;
+  max-width: 900px;
+ 
+  margin: auto;
+}
+
+#cabecera, #menu, #lateral,#contenido #principal, #contenido #secundario, #pie {
+  border: 1px solid #777;
+}
+
+#cabecera { clear: both; }
+#menu { clear: both; }
+#lateral { float: left; width: 22%; }
+#contenido { float: right; width: 78%; }
+#contenido #principal { float: left; width: 78%; }
+#contenido #secundario { float: right; width: 20%; }
+#pie { clear: both; }
+
+/*-- Cabecera --------------------------------------------------------*/
+#cabecera #logo { float: left; }
+#cabecera #buscador { float: right; }
+    #cabecera{
+      display: flex;
+      justify-content: center;
+      background-color: #F2F3F7;
+    }
+    h1{
+      margin: 0px;
+      font-family: 'Courier New', Courier, monospace;
+      color: #464F56;
+      font-size: 120px;
+    }
+/*-- Menu ------------------------------------------------------------*/
+#menu_principal li { display: inline; float: left; 
+margin-right: 10px;
+margin-left: 0;
+font-size: 18px;
+}
+#menu {
+  margin-bottom: .5em;
+  display: flex;
+  justify-content: center;
+  
+}
+#menu_principal a{
+  color: white;
+  padding: 18px;
+  background-color:#464f56c5;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  border: none;
+}
+
+/*-- Sección Principal -----------------------------------------------*/
+#contenido #principal .articulo img { width: 150px; height: 150px; float: left; }
+
+/*-- Pie de página ---------------------------------------------------*/
+#pie .enlaces   { float: left; }
+#pie .copyright { float: right; }
+#cabecera,
+#menu,
+#lateral,
+#lateral #noticias,
+#lateral #publicidad,
+#contenido,
+#contenido #principal,
+#contenido #secundario,
+#pie {
+  padding: .5em;
+}
+
+#lateral {
+  padding: 0;
+}
+#contenido {
+  width: 77%;
+  padding: 0;
+}
+
+#contenido #principal {
+  width: 73%;
+}
+#contenido #principal .articulo {
+  margin-bottom: 1em;
+}
+
+#contenido #principal .articulo img {
+  margin: .5em;
+}
+
+#lateral #publicidad {
+  margin-top: 0em;
+}
+/*-- principal --------------------------------*/
+.articulo h2{
+  text-align: center;
+  border-bottom: #464F56 3px dotted ;
+  color: #464F56;
+  font-family:Arial, Helvetica, sans-serif
+}
+#principal{
+  background-color: #D2CEC3;
+}
+.articulo img{
+  width: 60px;
+  border: #464F56 3px solid;
+}
+.articulo p {
+  color: #464F56;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*-- parte derecha --------------------------------*/
+#secundario{
+background-color:#F2F3F7;
+}
+#secundario h2{
+  color:#F2F3F7;
+  text-align: center;
+  background-color: #464F56;
+  font-family: monospace;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px; 
+  border-radius: 5px;
+}
+
+#secundario p{
+  color: rgb(75, 78, 80);
+  font-size: 17px;
+  margin-top:3px;
+  margin-bottom: 60px;
+
+}
+#secundario a{
+  margin-top:0px;
+  margin-bottom: 0px;
+  padding: 6px;
+  color:#D2CEC3;
+  text-decoration: none; 
+  background-color: #464F56;
+  border-radius: 10px;
+}
+/*-- lado izquierdo --------------------------------*/
+#lateral{
+  background-color: #F2F3F7;
+}
+#noticias h3{
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+#noticias p a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #464F56;
+}
+#noticias p a:hover {
+  color: yellowgreen;
+}
+.relacionados{
+  font-size: 18px;
+}
+#noticias a{
+  font-size: 20px;
+  text-decoration: none;
+}
+#noticias h3 a{
+  font-size: 20px;
+  color:#464F56;
+}
+#noticias li{
+list-style: none;
+display: inline-block;
+font-size: 10px;
+}
+#noticias li a {
+  color:#D2CEC3;
+  font-family: cursive;
+  background-color: #464F56;
+  padding: 4px;
+  border-radius: 10px;
+}
+#noticias ul{
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+}
+#noticias li a:hover{
+  color:#464F56;
+  background-color: white;
+}
+/*-- publicidad izquierda --------------------------------*/
+#publicidad h3 {
+  margin: 0px;
+  text-align: center;
+  color: #464F56;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+}
+#publicidad p{
+  font-size: 15px;
+  font-family: Arial;
+  color: beige;
+  margin-top: 0px;
+  margin-left: 6px;
+  background-color: #777;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+/*-- final --------------------------------*/
+#pie {
+  display: flex;
+  justify-content: center;
+  background-color: #F2F3F7;
+  padding: 1em ;
+}
+.enlaces a{
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:smaller;
+  color: #464F56;
+  font-size: 15px;
+}
